@@ -1,9 +1,42 @@
 body {
     font-family: 'Merriweather', serif;
     background-color: wheat;
+    overflow: hidden;
+}
+
+.centre {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #header {
+    position: fixed;
+    z-index: 1;
     font-size: 5em;
-    text-align: center;
+    color: darkred;
+    top: 15% !important;
+}
+
+#oof-circle {
+    z-index: 0;
+
+    background-color: darkred;
+    border-radius: 50%;
+    width: 0vmax;
+    height: 0vmax;
+
+    transition: width 0.5s, height 0.5s;
+}
+
+.expand {
+    width: 150vmax;
+    height: 150vmax;
+}
+
+#oof-text {
+    color: wheat;
+    font-size: 10em;
 }
