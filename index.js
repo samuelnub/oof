@@ -7,8 +7,8 @@ window.onload = () => {
     shake.start();
 
     let sounds = [
-        new Howl({ src: ["./sounds/oofRoblox.ogg"] }),
-        new Howl({ src: ["./sounds/oofSteve.ogg"] })
+        new Howl({ src: ["./sounds/oofRoblox.ogg", "./sounds/oofRoblox.mp3"] }),
+        new Howl({ src: ["./sounds/oofSteve.ogg", "./sounds/oofSteve.mp3"] })
     ];
 
     let oofs = 0;
