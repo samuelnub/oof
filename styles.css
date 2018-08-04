@@ -1,0 +1,9 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: wheat;
+}
+
+#header {
+    font-size: 5em;
+    text-align: center;
+}
