@@ -11,6 +11,8 @@ window.onload = () => {
         new Howl({ src: ["./sounds/oofSteve.ogg"] })
     ];
 
+    let oofs = 0;
+
     let oofCircleDiv = document.getElementById("oof-circle");
     let expandAnim = "expand";
 
@@ -22,7 +24,8 @@ window.onload = () => {
 
     window.addEventListener("shake", shakeCallback, false);
     function shakeCallback() {
-        console.log("oof!");
+        oofs += 1;
+        console.log("oof! " + oofs);
         sounds[getRandomInt(0, sounds.length-1)].play();
         oofCircleDiv.classList.add(expandAnim);
         setTimeout(() => {
