@@ -13,6 +13,9 @@ window.onload = () => {
 
     let oofs = 0;
 
+    let headerDiv = document.getElementById("header");
+    let headerOgText = headerDiv.innerHTML; // not really needed but hey
+
     let oofCircleDiv = document.getElementById("oof-circle");
     let expandAnim = "expand";
 
@@ -22,6 +25,8 @@ window.onload = () => {
         shakeCallback();
     }, false);
 
+    let oofCounterPrefix = "You have oof'd ";
+    let oofCounterSuffix = ".";
     window.addEventListener("shake", shakeCallback, false);
     function shakeCallback() {
         oofs += 1;
@@ -31,6 +36,12 @@ window.onload = () => {
         setTimeout(() => {
             oofCircleDiv.classList.remove(expandAnim);
         }, dropDelay);
+
+        setTimeout(() => {
+            if(oofs >= 1) {
+                headerDiv.innerHTML = oofCounterPrefix + writtenNumber(oofs) + (oofs === 1? " time" : " times") + oofCounterSuffix;
+            }
+        }, 200); // the peak of the animation where the whole screen is red (sorry for magic number :(( )))
     }
 };
 

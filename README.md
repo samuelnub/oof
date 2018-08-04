@@ -8,6 +8,7 @@ This *should* work in Chrome, Safari, Firefox
 Libraries used:
 [Shake.js](https://github.com/alexgibson/shake.js)
 [Howler.js](https://github.com/goldfire/howler.js)
+[Written Number](https://github.com/yamadapc/js-written-number)
 
 
 please go away now
