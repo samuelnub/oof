@@ -39,8 +39,9 @@ body {
 
 @keyframes expand-anim {
     0% { width: 0vmax; height: 0vmax; opacity: 1; }
-    20% { width: 150vmax; height: 150vmax; opacity: 1 }
-    100% { width: 0vmax; height: 0vmax; opacity: 0 }
+    20% { width: 150vmax; height: 150vmax; }
+    30% { opacity: 1; }
+    100% { width: 0vmax; height: 0vmax; opacity: 0; }
 }
 
 #oof-text {
